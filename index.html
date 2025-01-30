@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title>Pet House</title>
+    <style>
+        .font-adlam {
+  font-family: "ADLaM Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-sora {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.back{
+    background-image: url("c1-assets/cat-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:768px){
+    .back{
+        background-size: 580px 350px;
+        background-position: bottom left;
+    }
+}
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pet house</h1>
-
+        <div class="md:flex justify-between px-5 md:px-36 py-0 md:py-4 bg-[#FFF9F4]">
+        <div class="flex justify-between p-3 md:flex items-center gap-3">
+            <img src="c1-assets/logo-header.png" alt="">
+            <span class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              </span>
+            <h2 class="font-sora text-3xl hidden md:flex">Browse<span class="text-yellow-400">4</span>pet</h2>
+        </div>
+        <ul class="hidden md:flex items-center text-xl gap-8 list-none">
+            <li><a class="md:decoration-black" href="#">Find a Pet</a></li>
+            <li><a class="md:decoration-black" href="#">Breeds</a></li>
+            <li><a class="md:decoration-black" href="#">Contact Us</a></li>
+        </ul>
+        <div class="hidden md:flex items-center gap-3">
+            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+              </svg>
+              </span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              </span>
+              <button class="px-6 py-2 border border-orange-300 rounded-lg hover:bg-orange-300">Login</button>
+              <button class="bg-orange-300 px-6 py-2 rounded-lg">Register</button>
+        </div>
+        </div>
     </header>
     <main>
+        <div class="back px-4 p-0 md:m-auto w-[1320px] h-[749px] bg-white shadow-lg rounded-lg overflow-hidden flex items-center md:p-10">
+            <div class="w-1/2 space-y-5">
+                <h1 class="text-5xl font-adlam font-bold text-gray-900">Pamper Your Pet,<br>Because They Deserve the Best</h1>
+                <p class="text-gray-600 text-lg">Discover a world of treats, toys, and essentials handpicked for your furry<br> friends. Shop now and make tails wag with joy!</p>
+                <button class="bg-yellow-400 text-black font-semibold px-5 py-3 rounded-lg shadow hover:bg-yellow-500">Find a pet</button>
+            </div>
+            
+        </div>
 
     </main>
     <footer>
