@@ -54,6 +54,26 @@
     height: 360px;
     width: 704px;
 }
+.right1-div h1{
+    padding: 10px 0px 10px 0px;
+}
+footer{
+    margin-top: 450px;
+    
+}
+
+@keyframes animateHeading {
+            0% { color: #ff5733; transform: scale(1); }
+            50% { color: #33ff57; transform: scale(1.1); }
+            100% { color: #5733ff; transform: scale(1); }
+        }
+.animation{
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            animation: animateHeading 3s infinite ease-in-out;
+}
+
 @media screen and (max-width:768px){
     .back{
         background-size: 500px 350px;
@@ -62,6 +82,13 @@
     .right1-div{
         width: 430px;
         
+    }
+    .animation{
+        text-align: left;
+        font-size: 30px;
+    }
+    footer{
+        margin-top: 650px;
     }
 }
 
@@ -100,9 +127,9 @@
     <main>
         <div class="back px-4 p-0 md:m-auto w-[1320px] h-[749px] bg-white rounded-lg overflow-hidden flex items-center md:p-10">
             <div class="w-1/2 space-y-5">
-                <h1 class="text-3xl md:text-5xl font-adlam font-bold text-gray-900">Pamper Your Pet,<br>Because They Deserve the Best</h1>
+                <h1 class="text-3xl animation md:text-5xl font-adlam font-bold text-gray-900">Pamper Your Pet,<br>Because They Deserve the Best</h1>
                 <p class="text-base text-wrap md:font-sora md:text-xl">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-yellow-400 font-sora text-black font-semibold px-5 py-3 rounded-lg shadow hover:bg-yellow-500">Find a pet</button>
+                <button class="bg-yellow-400 font-sora text-black font-semibold px-5 py-3 rounded-lg hover:bg-yellow-500">Find a pet</button>
             </div>
             
         </div>
@@ -249,8 +276,11 @@
                 <h1 class="text-2xl md:text-4xl pb-10 font-sora">Everyday low Price</h1>
                 <div class="flex flex-col md:flex md:flex-row gap-5">
                     <div class="relative right1-div p-10 bg-no-repeat rounded-2xl" style="background-image: url('/c1-assets/cute-dog-mid.png'), linear-gradient(to right, #F8CCFB, #ACD2FD);">
-                        <h1 class="text-3xl font-adlam">T-Shirts For Dogs</h1>
-                        <h1 class="text-5xl text-[#FFDC26]">$7.99</h1>
+                        <h1 class="text-xl font-sora">Under Price</h1>
+                        <h1 class="text-4xl font-adlam">Pet Grooming Mitt</h1>
+                        <h1 class="text-white font-adlam text-2xl">(Easy hair removal)</h1>
+                        <h1 class="text-5xl font-adlam">$7.99</h1>
+                        
                       </div>
 
                     <div class="relative left1-div p-10 bg-no-repeat rounded-2xl" style="background-image: url('/c1-assets/cute-pet-small.png'), linear-gradient(to right, #FFF9F4, #F9DF8A);">
@@ -310,10 +340,55 @@
 
                 </div>
 
+                <div class="absolute flex flex-col m-5 md:flex md:flex-row gap-x-28 justify-between px-10 py-12 bg-orange-50 md:mx-32 my-20">
+                  <div>
+                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                  </div>
+                  <div class="md:pr-48">
+                    <h1 class="text-4xl py-3 font-adlam">Get Pawsome News!</h1>
+                    <h1 class="text-xl py-3 font-sora">Exclusive training tips, ticks, product deals and more.</h1>
+                    <input type="email" placeholder="Enter Your E-mail" class="w-full my-3 px-5 rounded-md h-14">
+                    <button class="bg-yellow-400 my-5 px-7 py-2 rounded-lg">Subscribe</button>
+                  </div>
+
+
+                </div>    
+
 
 
     </main>
-    <footer>
+    <footer class="bg-[#FFDC26]">
+        
+        <div class="flex flex-col gap-10 px-4 mx-4 bg-[#FFDC26] pt-96 md:flex md:flex-row justify-between md:mx-32 md:pt-80 pb-20">
+            <div>
+            <div class="flex gap-4 py-4 items-center">
+            <img src="c1-assets/logo-footer.png" alt="">
+            <h1 class="text-2xl font-sora">Browse Pets</h1>
+           </div>
+           <p class="text-xl font-sora">Discover a world of treats, toys, and<br> essentials handpicked for your furry<br> friends</p>
+
+        </div>
+
+        <div>
+            <ul class="text-xl list-none">
+                <li class="py-5">Find a Pet</li>
+                <li class="py-5">Breeds</li>
+                <li class="py-5">Contact Us</li>
+            </ul>
+        </div> 
+        
+        <div>
+            <h1 class="mb-3">Follow Us</h1>
+            <div class="flex gap-3">
+            <img src="c1-assets/fb.png" alt="">
+            <img src="c1-assets/twitter.png" alt="">
+            <img src="c1-assets/google+.png" alt="">
+            <img src="c1-assets/dribble.png" alt="">
+            </div>
+        </div>
+
+        </div>  
+        
 
     </footer>
 </body>
